@@ -7,8 +7,7 @@ the signature original component is a **honeycomb project grid** built
 with CSS `clip-path` and populated dynamically by a small ES6 module.
 
 - **Author:** Varshith Sai Pothula
-- **Live site:** _replace with your deployed GitHub Pages URL, e.g._
-  `https://pvss7.github.io/HomePage-Project-1/`
+- **Live site:** `https://pvss7.github.io/HomePage-Project-1/`
 
 ## Project Objective
 
@@ -118,7 +117,7 @@ with its coding/file-creation tools.
   structure (HTML pages, CSS design system, ES6 modules), the project
   panel descriptions on `projects.html`, generating placeholder SVG icons/favicon,
   writing this README from my intial drafted README, and configuring ESLint/Prettier.
-- **Representative prompts used:**
+- **Representative prompts used such as:**
   > "Draft a README using the given intial draft and making sure it has all the requirements, find out if any of the requirements need editing and keep placeholders where images or designs are needed"
 - All AI-generated code and text was reviewed by me before this
   submission, and I take responsibility for its accuracy.
