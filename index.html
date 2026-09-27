@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Varshith Sai Pothula — Computer Science Student</title>
+    <meta name="author" content="Varshith Sai Pothula" />
+    <meta
+      name="description"
+      content="Personal homepage of Varshith Sai Pothula, an MSCS student at Northeastern University. Blueprint-styled portfolio with a honeycomb project grid, built in vanilla HTML5, CSS3 and ES6 modules."
+    />
+    <link rel="icon" type="image/svg+xml" href="./images/favicon.svg" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" src="./js/main.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="page-shell">
+        <a class="brand" href="./index.html">VSP</a>
+
+        <button
+          type="button"
+          class="nav-toggle"
+          aria-expanded="false"
+          aria-controls="main-nav"
+        >
+          Menu
+        </button>
+
+        <nav class="main-nav" id="main-nav" aria-label="Primary">
+          <ul class="nav-list">
+            <li><a href="./index.html" aria-current="page">Home</a></li>
+            <li><a href="./projects.html">Projects</a></li>
+            <li><a href="./about.html">About</a></li>
+          </ul>
+          <p class="nav-status">
+            <time id="live-clock">00:00:00</time>
+          </p>
+          <a class="nav-cta" href="mailto:pothula.va@northeastern.edu"
+            >Email me</a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero page-shell">
+        <p class="hero__eyebrow">// personal homepage · AI-assisted page</p>
+        <h1>Varshith Sai Pothula</h1>
+        <p class="hero__role">
+          MS Computer Science Student, Northeastern University
+        </p>
+        <p class="hero__lede">
+          I'm a database-leaning full-stack developer who likes turning messy
+          real-world data — match stats, attendance logs, campus notices — into
+          schemas and apps that actually hold up. Based in Boston, currently
+          open to internship and co-op opportunities.
+        </p>
+        <div class="button-row">
+          <a class="btn btn--primary" href="./projects.html">View projects</a>
+          <a
+            class="btn"
+            href="https://linkedin.com/in/varshipo"
+            target="_blank"
+            rel="noopener noreferrer"
+            >LinkedIn</a
+          >
+          <a class="btn" href="./resume.pdf">Resume</a>
+        </div>
+      </section>
+
+      <section
+        class="section page-shell"
+        id="about"
+        aria-labelledby="about-heading"
+      >
+        <div class="about-grid">
+          <div>
+            <p class="section__label">01 — about</p>
+            <h2 id="about-heading">A little about me</h2>
+            <p>
+              I'm currently pursuing my MS in Computer Science at Northeastern's
+              Khoury College, after a B.Tech in Computer Science and Engineering
+              from CVR College of Engineering in Hyderabad. Most of my project
+              work sits at the intersection of databases and the apps built on
+              top of them MySQL and MongoDB schemas, React/React Native front
+              ends, and Node/Express APIs tying it together.
+            </p>
+            <p>
+              This homepage itself is a small project: a static site built with
+              plain HTML5, CSS3, and ES6 modules, with no frameworks or
+              component libraries involved. Its copy was drafted with AI
+              assistance and reviewed by hand see the README's "Use of GenAI"
+              section for details. For the unfiltered version of who I am, head
+              to the <a href="./about.html">About page</a>.
+            </p>
+          </div>
+
+          <aside class="facts-panel" aria-labelledby="facts-heading">
+            <h3 id="facts-heading">Quick facts</h3>
+            <dl>
+              <dt>School</dt>
+              <dd>Northeastern University, Khoury College</dd>
+              <dt>Focus</dt>
+              <dd>Databases &amp; full-stack development</dd>
+              <dt>Based in</dt>
+              <dd>Boston, MA</dd>
+              <dt>Site uptime</dt>
+              <dd id="uptime-counter">0d 00h 00m</dd>
+            </dl>
+          </aside>
+        </div>
+      </section>
+
+      <section
+        class="section page-shell"
+        id="projects"
+        aria-labelledby="projects-heading"
+      >
+        <p class="section__label">02 — projects</p>
+        <h2 id="projects-heading">Projects, honeycomb-style</h2>
+        <p>
+          Each cell below is a project — hover or tab to a cell to see its name,
+          then select it to read more on the
+          <a href="./projects.html">projects page</a>.
+        </p>
+        <ul class="honeycomb" aria-label="Project links"></ul>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="page-shell">
+        <p class="footer-note">© 2026 Varshith Sai Pothula. Built by hand.</p>
+        <ul class="footer-links">
+          <li>
+            <a
+              href="https://linkedin.com/in/varshipo"
+              target="_blank"
+              rel="noopener noreferrer"
+              >LinkedIn</a
+            >
+          </li>
+          <li><a href="mailto:pothula.va@northeastern.edu">Email</a></li>
+          <li>
+            <a
+              href="https://github.com/pvss7/HomePage-Project-1"
+              target="_blank"
+              rel="noopener noreferrer"
+              >View source</a
+            >
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

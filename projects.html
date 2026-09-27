@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects — Varshith Sai Pothula</title>
+    <meta name="author" content="Varshith Sai Pothula" />
+    <meta
+      name="description"
+      content="Software projects built by Varshith Sai Pothula, including an e-sports tournament manager, a department noticeboard app, and a mobile attendance system."
+    />
+    <link rel="icon" type="image/svg+xml" href="./images/favicon.svg" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" src="./js/main.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="page-shell">
+        <a class="brand" href="./index.html">VSP</a>
+
+        <button
+          type="button"
+          class="nav-toggle"
+          aria-expanded="false"
+          aria-controls="main-nav"
+        >
+          Menu
+        </button>
+
+        <nav class="main-nav" id="main-nav" aria-label="Primary">
+          <ul class="nav-list">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./projects.html" aria-current="page">Projects</a></li>
+            <li><a href="./about.html">About</a></li>
+          </ul>
+          <p class="nav-status">
+            <time id="live-clock">00:00:00</time>
+          </p>
+          <a class="nav-cta" href="mailto:pothula.va@northeastern.edu"
+            >Email me</a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="section page-shell" aria-labelledby="projects-heading">
+        <p class="section__label">projects</p>
+        <h1 id="projects-heading">Things I've built</h1>
+        <p>
+          Three projects from my coursework and personal time, mostly centered
+          on database design and mobile/web apps.
+        </p>
+
+        <div class="project-panels">
+          <article class="project-panel" id="rushb">
+            <img
+              class="project-panel__thumb"
+              src="./images/project-esports.svg"
+              alt="Blueprint-style icon of a trophy representing an e-sports tournament manager"
+              width="200"
+              height="200"
+            />
+            <h2>RUSH-B</h2>
+            <p>
+              An e-sports tournament manager for CS2 matches. Designed a MySQL
+              schema covering teams, players, schedules, outcomes, overtime
+              tracking, and match stats, then built functions and stored
+              procedures powering interactive visual reports for planning and
+              decisions.
+            </p>
+            <ul class="stack-tags">
+              <li>MySQL</li>
+              <li>Python</li>
+              <li>Flask</li>
+              <li>Bootstrap</li>
+            </ul>
+            <p class="project-panel__links">
+              <a
+                class="btn"
+                href="https://github.com/pvss7/rush-b"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Source</a
+              >
+            </p>
+          </article>
+
+          <article class="project-panel" id="noticeboard">
+            <img
+              class="project-panel__thumb"
+              src="./images/project-noticeboard.svg"
+              alt="Blueprint-style icon of a bulletin board representing a department noticeboard app"
+              width="200"
+              height="200"
+            />
+            <h2>CSE Noticeboard</h2>
+            <p>
+              A department noticeboard app built to streamline real-time
+              distribution of announcements within the CSE community. Structured
+              a MongoDB Atlas database to manage and serve notices efficiently.
+            </p>
+            <ul class="stack-tags">
+              <li>MongoDB Atlas</li>
+              <li>React Native</li>
+              <li>Node.js</li>
+              <li>Express</li>
+            </ul>
+            <p class="project-panel__links">
+              <a
+                class="btn"
+                href="https://github.com/pvss7/Department-Notice-Board"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Source</a
+              >
+            </p>
+          </article>
+
+          <article class="project-panel" id="attendance">
+            <img
+              class="project-panel__thumb"
+              src="./images/project-attendance.svg"
+              alt="Blueprint-style icon of a location pin representing a GPS-based attendance system"
+              width="200"
+              height="200"
+            />
+            <h2>Mobile Attendance System</h2>
+            <p>
+              A GPS and face-recognition based attendance system for
+              organizations. Modeled and queried a MongoDB Atlas database to
+              store and verify records, ensuring accurate, duplicate-free
+              tracking of physical presence.
+            </p>
+            <ul class="stack-tags">
+              <li>MongoDB Atlas</li>
+              <li>React Native</li>
+              <li>Node.js</li>
+              <li>Express</li>
+              <li>Postman</li>
+            </ul>
+            <p class="project-panel__links">
+              <a
+                class="btn"
+                href="https://github.com/pvss7/Mobile-Attendance-System"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Source</a
+              >
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section
+        class="section page-shell"
+        id="contact"
+        aria-labelledby="contact-heading"
+      >
+        <p class="section__label">get in touch</p>
+        <h2 id="contact-heading">Send me a message</h2>
+        <p>
+          This form is a static front-end demo (no backend is connected). For a
+          real reply, use the email button in the navigation instead.
+        </p>
+        <form class="contact-form" action="mailto:pothula.va@northeastern.edu">
+          <div class="form-field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary">Send</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="page-shell">
+        <p class="footer-note">© 2026 Varshith Sai Pothula. Built by hand.</p>
+        <ul class="footer-links">
+          <li>
+            <a
+              href="https://linkedin.com/in/varshipo"
+              target="_blank"
+              rel="noopener noreferrer"
+              >LinkedIn</a
+            >
+          </li>
+          <li><a href="mailto:pothula.va@northeastern.edu">Email</a></li>
+          <li>
+            <a
+              href="https://github.com/pvss7/HomePage-Project-1"
+              target="_blank"
+              rel="noopener noreferrer"
+              >View source</a
+            >
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
