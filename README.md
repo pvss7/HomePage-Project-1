@@ -7,6 +7,8 @@ the signature original component is a **honeycomb project grid** built
 with CSS `clip-path` and populated dynamically by a small ES6 module.
 
 - **Author:** Varshith Sai Pothula
+
+- **Class:** [CS 5610 Web Development (Online), Northeastern University, Fall 2026](https://johnguerra.co/classes/webDevelopment_online_fall_2026/)
 - **Live site:** `https://pvss7.github.io/HomePage-Project-1/`
 
 ## Project Objective
@@ -24,7 +26,7 @@ JavaScript (loaded as ES modules), with:
 
 ## Screenshot
 
-![Homepage screenshot showing the blueprint-themed hero section and honeycomb project grid](./docs/screenshot.png)
+![Homepage screenshot showing the blueprint-themed hero section and honeycomb project grid](./docs/Screenshot.png)
 
 ## Pages
 
