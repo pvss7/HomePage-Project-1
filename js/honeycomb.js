@@ -11,6 +11,12 @@ import { projects } from "./projects-data.js";
 export function renderHoneycomb(listElement) {
   if (!listElement) return;
 
+  // Code review (Srujan Kothuri): Great use of a DocumentFragment here. All
+  // cells are built off-page and inserted with one appendChild, so the browser
+  // reflows once instead of once per project. Using textContent (not
+  // innerHTML) for the tag and caption also means project text can never be
+  // parsed as HTML.
+
   const fragment = document.createDocumentFragment();
 
   projects.forEach((project) => {
